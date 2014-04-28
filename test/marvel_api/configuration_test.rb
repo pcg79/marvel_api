@@ -1,7 +1,11 @@
 require 'test_helper'
 
 describe MarvelApi::Configuration do
-  it "should have nil default api key" do
+  before do
+    MarvelApi.reset!
+  end
+
+  it "should have nil default keys" do
     assert_nil MarvelApi.api_key
   end
 

@@ -8,6 +8,10 @@ module MarvelApi
       @configuration ||= Configuration.new
     end
 
+    def reset!
+      @configuration = Configuration.new
+    end
+
     def config(&block)
       yield configuration
     end
