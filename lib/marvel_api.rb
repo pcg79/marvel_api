@@ -19,6 +19,10 @@ module MarvelApi
     def api_key
       configuration.api_key
     end
+
+    def private_key
+      configuration.private_key
+    end
   end
 
 end
