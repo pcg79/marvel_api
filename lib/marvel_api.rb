@@ -1,5 +1,6 @@
 require "marvel_api/version"
 require 'marvel_api/configuration'
+require 'marvel_api/character'
 
 module MarvelApi
 
