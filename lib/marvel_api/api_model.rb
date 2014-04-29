@@ -1,9 +1,11 @@
 require 'httparty'
+require 'virtus'
 
 module MarvelApi
   class NotImplementedError < StandardError; end
 
   class ApiModel
+    include ::Virtus.model
 
     def self.all
       new.all
